@@ -1,5 +1,5 @@
 # FRANKENSTEIN'S TOWER
 
 ## FEATURES
- - blog
- - forum
+#### BLOG to document the life of a monster
+#### FORUM to get advice from other monsters
