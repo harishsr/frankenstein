@@ -6,17 +6,17 @@ RSpec.feature "Blogs", type: :feature do
     before do 
       visit '/'
       @title = 'Yo, Dracula!'
-      @entry = 'Vampires suck! (get it?)'
+      @post = 'Vampires suck!'
     end
 
     it "should be successful" do 
       click_link "New entry"
       fill_in 'Title', with: @title
-      fill_in 'Entry', with: @entry
+      fill_in 'Entry', with: @post
       click_button 'Submit'
 
       expect(page).to have_content(@title)
-      expect(page).to have_content(@entry)
+      expect(page).to have_content(@post)
     end
 
     it "should properly fail if validations aren't being met" do 
