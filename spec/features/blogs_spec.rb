@@ -3,14 +3,14 @@ require 'rails_helper'
 RSpec.feature "Blogs", type: :feature do
   context "Creating an entry" do 
     
-    setup do 
+    before do 
       visit '/'
       @title = 'Yo, Dracula!'
       @entry = 'Vampires suck! (get it?)'
     end
 
     it "should be successful" do 
-      click_link 'New entry'
+      click_link "New entry"
       fill_in 'Title', with: @title
       fill_in 'Entry', with: @entry
       click_button 'Submit'
