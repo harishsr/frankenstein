@@ -3,7 +3,7 @@
 ## FEATURES
 #### A: BLOG 
  - to document the life of a monster
- - can add pictures
+ - that includes added images
 
 #### B: USERS
  - that can post blog articles
@@ -11,4 +11,4 @@
 
 #### C: FORUM 
  - to recruit other monsters
- - can add pictures
+ - that includes added images
