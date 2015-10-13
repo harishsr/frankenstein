@@ -9,6 +9,10 @@
  - that can post blog articles
  - that can post comments
 
-#### C: FORUM 
+#### C: ADMIN
+ - that can add or delete posts by others
+ - that will be able to create new forums
+
+#### D: FORUM 
  - to recruit other monsters
  - that includes added images
