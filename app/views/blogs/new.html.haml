@@ -1,4 +1,6 @@
 = simple_form_for @post do |f|
   = f.input :title, placeholder: "Post title"
-  = f.textarea :post, placeholder: "What rattles in your mind..."
+  %br
+  = f.input :content, placeholder: "What rattles in your mind..."
+  %br
   = f.button :submit

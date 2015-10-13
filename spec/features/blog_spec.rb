@@ -12,8 +12,8 @@ RSpec.feature "Blogs", type: :feature do
     it "should be successful" do 
       click_link "New entry"
       fill_in 'Title', with: @title
-      fill_in 'Entry', with: @post
-      click_button 'Submit'
+      fill_in 'Content', with: @post
+      click_button 'Create Blog'
 
       expect(page).to have_content(@title)
       expect(page).to have_content(@post)

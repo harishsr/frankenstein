@@ -9,7 +9,7 @@
  - that can post blog articles
  - that can post comments
 
-#### C: ADMIN
+#### C: ADMINS
  - that can add or delete posts by others
  - that will be able to create new forums
 

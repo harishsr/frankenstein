@@ -4,6 +4,7 @@ class BlogsController < ApplicationController
   end
 
   def show
+    @post = Blog.find(params[:id])
   end
 
   def new
@@ -14,6 +15,12 @@ class BlogsController < ApplicationController
   end
 
   def create
+    @post = Blog.new(blog_params)
+    if @post.save
+      redirect_to @post
+    else
+      render 'new'
+    end
   end
 
   def update
@@ -21,5 +28,11 @@ class BlogsController < ApplicationController
 
   def destroy
   end 
+
+  private
+
+    def blog_params
+      params.require(:blog).permit(:title, :content)
+    end
 
 end
