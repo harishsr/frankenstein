@@ -1,4 +1,6 @@
 = simple_form_for @post do |f|
+  = f.error_notification
+  
   = f.input :title, placeholder: "Post title"
   %br
   = f.input :content, placeholder: "What rattles in your mind..."
