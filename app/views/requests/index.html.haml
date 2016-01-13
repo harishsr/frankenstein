@@ -4,7 +4,7 @@
   %thead
     %tr
       %th User
-      %th Type
+      %th Requestor
       %th
       %th
       %th
@@ -13,7 +13,7 @@
     - @requests.each do |request|
       %tr
         %td= request.user
-        %td= request.type
+        %td= request.requestor
         %td= link_to 'Show', request
         %td= link_to 'Edit', edit_request_path(request)
         %td= link_to 'Destroy', request, :method => :delete, :data => { :confirm => 'Are you sure?' }
