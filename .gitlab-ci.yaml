@@ -1,0 +1,6 @@
+image: ruby:latest
+
+job1:
+  script:
+    - ls -al
+    - echo hello
